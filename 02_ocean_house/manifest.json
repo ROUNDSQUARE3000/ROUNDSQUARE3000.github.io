@@ -1,0 +1,40 @@
+{
+  "name": "Snow Globe Diorama — 02 House by the Sea",
+  "version": "2026.11.20",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "bootloader.bin",
+          "offset": 0
+        },
+        {
+          "path": "partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "boot_app0.bin",
+          "offset": 57344
+        },
+        {
+          "path": "firmware.bin",
+          "offset": 65536
+        },
+        {
+          "path": "frames_1.bin",
+          "offset": 2162688
+        },
+        {
+          "path": "frames_2.bin",
+          "offset": 14745600
+        },
+        {
+          "path": "frames_3.bin",
+          "offset": 27328512
+        }
+      ]
+    }
+  ]
+}
