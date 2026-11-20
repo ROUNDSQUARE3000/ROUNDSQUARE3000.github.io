@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diorama Installer</title>
+<script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+<style>
+  body { font-family: system-ui, sans-serif; background: #0b1026; color: #e8ecf5; margin: 0; padding: 32px 16px; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-weight: 600; font-size: 28px; margin: 0 0 8px; }
+  p { line-height: 1.5; color: #b9c2d8; }
+  .card { background: #151c3a; border-radius: 14px; padding: 20px; margin: 20px 0; }
+  .card h2 { margin: 0 0 6px; font-size: 20px; color: #fff; }
+  ol { color: #b9c2d8; line-height: 1.7; padding-left: 20px; }
+  esp-web-install-button button { background: #f2c66d; color: #1a1a1a; border: 0; border-radius: 10px; padding: 12px 22px; font-size: 16px; font-weight: 600; cursor: pointer; }
+  .warn { color: #f2c66d; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Install a diorama</h1>
+  <p>Works in Chrome or Edge on a computer.</p>
+  <ol>
+    <li>Plug the device into your computer with a USB-C cable.</li>
+    <li>Press <b>Install</b> under the diorama you want.</li>
+    <li>Pick the device in the list and wait for “Installation complete” (about 2–4 minutes). <span class="warn">Don't unplug the cable while it installs.</span></li>
+  </ol>
+
+  <div class="card">
+    <h2>01 · Lighthouse</h2>
+    <p>A snowy lighthouse on the shore, with a ship frozen at the pier.</p>
+    <esp-web-install-button manifest="01_lighthouse/manifest.json">
+      <button slot="activate">Install</button>
+      <span slot="unsupported">This browser can't install. Please open this page in Chrome or Edge.</span>
+      <span slot="not-allowed">This page must be opened over https or from localhost.</span>
+    </esp-web-install-button>
+  </div>
+
+  <div class="card">
+    <h2>02 · House by the Sea</h2>
+    <p>A snowy cottage on a cliff above the sea.</p>
+    <esp-web-install-button manifest="02_ocean_house/manifest.json">
+      <button slot="activate">Install</button>
+      <span slot="unsupported">This browser can't install. Please open this page in Chrome or Edge.</span>
+      <span slot="not-allowed">This page must be opened over https or from localhost.</span>
+    </esp-web-install-button>
+  </div>
+</main>
+</body>
+</html>
